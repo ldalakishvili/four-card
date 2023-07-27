@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+ font-family: 'Poppins', sans-serif;
+}
+body{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ /* height: 150vh; */
+ background-color: rgba(250, 250, 250, 1);
+}
+.main-section {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin:100px auto;
+ gap: 64px;
+}
+.header-section{
+ text-align: center;
+max-width: 540px;
+color: rgba(77, 79, 98, 1)
+}
+.header-title{
+  font-size: 36px;
+  font-weight: 275;
+  line-height: 54px;
+  letter-spacing: 0.25px;
+}
+.bold{
+ font-weight: 600;
+ letter-spacing: 0.25px;
+}
+.header-text{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.10px;
+  margin-top: 16px;
+}
+.cards{
+ display: grid;
+ grid-template-columns: repeat(3, 350px);
+ gap: 30px;
+ justify-content: center;
+ align-items: center;
+
+}
+.card{
+ display: flex;
+ flex-direction: column;
+ background-color:white;
+ width: 350px;
+ height: 250px;
+ padding: 32px;
+ color:rgba(77, 79, 98, 1) ;
+ border-radius: 12px;
+ box-shadow: 6px 9px 15px #888888;;
+}
+
+.middle-cards{
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ gap: 30px;
+}
+.card-title{
+ font-size: 20px;
+ font-weight: 600;
+ line-height: 30px;
+ letter-spacing: 0px;
+}
+.card-text{
+ font-size: 13px;
+ font-weight: 400;
+ line-height: 23px;
+ letter-spacing: 0.09px;
+ margin: 6px 0 40px
+}
+
+.card-img{
+ align-self: flex-end;
+ width: 64px;
+ height: 64px;
+}
+.supervisor{ 
+ border-top: solid 6px rgba(68, 211, 210, 1) ; 
+
+}
+.team-builder{
+ border-top: solid 6px rgba(234, 84, 84, 1);
+}
+.calculator{
+ border-top: solid 6px rgba(84, 158, 242, 1);
+
+}
+.karma{
+ border-top: solid 6px rgba(252, 174, 74, 1);
+}
+
+
+@media(max-width:1160px){
+ .cards{
+  grid-template-columns: 350px;
+ }
+}
+@media(max-width:660px){
+.main-section {
+ margin:85px auto;
+  gap: 76px;
+ }
+.header-section {
+ max-width: 311px;
+}
+.header-title {
+ font-size: 24px;
+ line-height: 36px;
+ letter-spacing: 0.17px;
+}
+.cards {
+  grid-template-columns: 311px;
+ gap: 25px;
+}
+.card {
+ width: 311px;
+ height: 222px;
+ padding: 28px;
+}
+.middle-cards {
+ gap: 25px;
+}
+.card-text {
+ margin:1px 0 33px;
+}
+.card-img {
+ width: 57px;
+ height: 57px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
